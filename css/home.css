@@ -6,14 +6,6 @@
   opacity: 0.8;
 }
 
-.card-actions:hover.red i {
+button:hover i[data-id] {
   color: red;
-}
-
-.card-actions:hover.blue i {
-  color: blue;
-}
-
-.card-actions:hover.yellow i {
-  color: goldenrod;
 }
