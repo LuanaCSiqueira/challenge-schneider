@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <title>Challenge Schneider | Post</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+        <div class="container-fluid px-lg-5">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mx-auto" href="./"
+            ><img
+              src="./assets/logo-header.svg"
+              alt="Schneider Eletrics"
+              height="64"
+              width="150"
+          /></a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            aria-labelledby="navbarNav"
+            id="navbarNav"
+          >
+            <div class="offcanvas-header">
+              <a class="navbar-brand mx-auto" href="./"
+                ><img
+                  src="./assets/logo-header.svg"
+                  alt="Schneider Eletrics"
+                  height="64"
+                  width="150"
+              /></a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto fw-bold text-uppercase gap-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./news.html">Notícias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">Sobre o projeto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pitch.html">Vídeo Pitch</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              id="profile-dropdown"
+              class="btn btn-outline-success dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a href="./profile.html" class="dropdown-item"
+                  ><i class="bi bi-person-fill me-2"></i>Perfil</a
+                >
+              </li>
+              <li>
+                <a href="./sign-in.html" class="dropdown-item"
+                  ><i class="bi bi-box-arrow-left me-2"></i>Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main-container"></main>
+    <footer class="bg-dark">
+      <div class="container-fluid row pt-5 pb-4 px-3 px-md-5">
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Links rápidos</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="./news.html" class="text-decoration-none link-secondary">
+                Notícias
+              </a>
+            </li>
+            <li>
+              <a
+                href="./pitch.html"
+                class="text-decoration-none link-secondary"
+              >
+                Vídeo Pitch
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.se.com/br/pt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-decoration-none link-secondary"
+              >
+                Site Schneider
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Lorem</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Lorem</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Lorem</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/logo-footer.svg" alt="Schneider Life is On" />
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
