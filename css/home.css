@@ -6,6 +6,14 @@
   opacity: 0.8;
 }
 
-button:hover i[data-id] {
+#card-actions {
+  cursor: default;
+}
+
+button:hover i[data-id='like'] {
   color: red;
+}
+
+button:hover i[data-id='comment'] {
+  color: goldenrod;
 }
