@@ -1,0 +1,67 @@
+:root {
+  --brand-primary: #009e4d;
+}
+
+.dropdown-item:active {
+  background-color: var(--brand-primary);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--brand-primary);
+}
+
+@media (max-width: 767px) {
+  .nav-link.active.nav-link::before {
+    height: 75%;
+    left: -8px;
+    width: 4px;
+    border-radius: unset;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#main-container {
+  margin-top: 122px;
+  margin-bottom: 40px;
+}
+
+#profile-dropdown {
+  border: none;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  background: url('https://i.pravatar.cc/50');
+}
+
+#profile-dropdown::after {
+  display: none;
+}
+
+footer ul > li {
+  padding-left: 8px;
+  font-size: 0.875rem;
+}
+
+footer div img {
+  width: 230px !important;
+}
+
+@media (max-width: 900px) {
+  footer div img {
+    display: none !important;
+  }
+}

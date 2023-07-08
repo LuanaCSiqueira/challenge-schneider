@@ -1,0 +1,19 @@
+.card-timestamp::before {
+  content: '•';
+  color: inherit;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  opacity: 0.8;
+}
+
+.card-actions:hover.red i {
+  color: red;
+}
+
+.card-actions:hover.blue i {
+  color: blue;
+}
+
+.card-actions:hover.yellow i {
+  color: goldenrod;
+}
