@@ -75,3 +75,8 @@ footer div img {
   box-shadow: none;
   border-color: var(--brand-primary);
 }
+
+/* Borda Container login */
+#box-login {
+  border-radius: 15px;
+  }
