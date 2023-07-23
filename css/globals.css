@@ -1,6 +1,3 @@
-:root {
-  --brand-primary: #009e4d;
-}
 body {
   display: grid;
   height: 100vh;
@@ -8,7 +5,7 @@ body {
 }
 
 .dropdown-item:active {
-  background-color: var(--brand-primary);
+  background-color: #009e4d;
 }
 
 .nav-link {
@@ -21,11 +18,10 @@ body {
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: red;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--brand-primary);
+  background-color: #009e4d;
 }
 
 @media (max-width: 767px) {
@@ -73,5 +69,5 @@ footer div img {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: var(--brand-primary);
+  border-color: #009e4d;
 }
