@@ -3,6 +3,7 @@
 }
 
 .avatar-container {
+  position: relative;
   overflow: hidden;
   width: 200px;
   height: 200px;
@@ -17,17 +18,20 @@
   padding-inline: 0px;
 }
 
-.avatar-container:hover {
-  color: #999;
-  background-color: #ddd;
-}
-
-.avatar-container:hover i {
-  color: #999;
-}
-
 .avatar-container:focus {
   outline-color: #009e4d;
+}
+
+.avatar-container-backdrop {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.16);
+  transition: opacity 0.1s ease-in;
+}
+
+.avatar-container-backdrop:hover {
+  opacity: 1;
 }
 
 .avatar-preview {
