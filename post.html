@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <title>Challenge Schneider | Post</title>
   </head>
   <body>
@@ -99,7 +100,193 @@
         </div>
       </nav>
     </header>
-    <main id="main-container"></main>
+    <main id="main-container">
+      <div class="container">
+        <h1>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+          repudiandae!
+        </h1>
+        <div class="text-secondary mb-4">
+          <img
+            src="./assets/avatar.jpg"
+            alt="Profile avatar"
+            class="rounded-circle"
+            width="40"
+            height="40"
+          />
+          <span class="me-2">@johndoe</span>
+          <i class="bi bi-calendar"></i>
+          <span>30/07/2023</span>
+        </div>
+        <img
+          class="img-fluid rounded mb-4"
+          src="./assets/post-detail-1.jpg"
+          alt="post image"
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod tempora
+          ullam ducimus et quibusdam aut impedit, sed veniam quia accusantium.
+          Dolorem molestias at quisquam porro ipsa atque repellat eveniet totam.
+          Totam tempora temporibus dolor. Et fugit quae eveniet culpa autem
+          aliquam possimus nihil labore blanditiis odio praesentium eos atque
+          explicabo assumenda libero sed aspernatur, voluptate molestiae
+          sapiente eius. Quis distinctio nulla unde ex et eos dicta natus saepe
+          similique praesentium fugiat, voluptatem obcaecati molestias soluta,
+          ipsum ut voluptatibus error impedit ducimus dolorum, vel quod quos!
+          Aperiam molestias earum eaque, voluptatum illo veritatis provident
+          ipsa commodi, enim eos magnam qui similique.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod tempora
+          ullam ducimus et quibusdam aut impedit, sed veniam quia accusantium.
+          Dolorem molestias at quisquam porro ipsa atque repellat eveniet totam.
+          Totam tempora temporibus dolor. Et fugit quae eveniet culpa autem
+          aliquam possimus nihil labore blanditiis odio praesentium eos atque
+          explicabo assumenda libero sed aspernatur, voluptate molestiae
+          sapiente eius. Quis distinctio nulla unde ex et eos dicta natus saepe
+          similique praesentium fugiat, voluptatem obcaecati molestias soluta,
+          ipsum ut voluptatibus error impedit ducimus dolorum, vel quod quos!
+          Aperiam molestias earum eaque, voluptatum illo veritatis provident
+          ipsa commodi, enim eos magnam qui similique.
+        </p>
+        <!-- COMMENTS SECTION -->
+        <h2 class="mt-5 mb-4">Comentários</h2>
+        <div class="d-flex gap-2">
+          <img
+            data-id="comment-avatar"
+            src="./assets/avatar.jpg"
+            alt="user photo"
+            class="rounded-circle"
+            width="40"
+            height="40"
+          />
+          <div>
+            <div class="card border-0 bg-body-tertiary">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="card-title fs-5 text-body-emphasis">John Doe</h2>
+                  <small class="card-subtitle">5hr</small>
+                </div>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto recusandae fugit quia adipisci id doloribus facere aut,
+                  quam eius unde.
+                </p>
+              </div>
+            </div>
+            <div data-id="comment-actions-box">
+              <button
+                data-id="comment-like"
+                type="button"
+                class="btn comment-actions border-0"
+              >
+                Curtir
+              </button>
+              <span class="align-middle text-body-tertiary">•</span>
+              <button
+                data-id="comment-reply"
+                type="button"
+                class="btn comment-actions border-0"
+              >
+                Responder
+              </button>
+            </div>
+            <div id="reply-section"></div>
+            <div class="mt-4">
+              <div class="d-flex gap-2 comment-line">
+                <img
+                  data-id="comment-avatar"
+                  src="./assets/avatar.jpg"
+                  alt="user photo"
+                  class="rounded-circle avatar border border-2 border-light-subtle"
+                  width="40"
+                  height="40"
+                />
+                <div>
+                  <div class="card border-0 bg-body-tertiary">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <h2 class="card-title fs-5 text-body-emphasis">
+                          John Doe
+                        </h2>
+                        <small class="card-subtitle">5hr</small>
+                      </div>
+                      <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Iusto recusandae fugit quia adipisci id doloribus
+                        facere aut, quam eius unde.
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      data-id="comment-like"
+                      type="button"
+                      class="btn comment-actions border-0"
+                    >
+                      Curtir
+                    </button>
+                    <span class="align-middle text-body-tertiary">•</span>
+                    <button
+                      data-id="comment-reply"
+                      type="button"
+                      class="btn comment-actions border-0"
+                    >
+                      Responder
+                    </button>
+                  </div>
+                  <div id="reply-section"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SEND COMMENT SECTION -->
+        <h3 class="mt-4">Escreva um comentário</h3>
+        <form class="row gap-3 py-3 needs-validation" novalidate>
+          <div class="col-sm-6">
+            <label for="firstname" class="form-label fw-semibold">Nome*</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="firstname"
+              placeholder="Insira seu nome"
+            />
+            <div class="invalid-feedback">Campo obrigatório</div>
+          </div>
+          <div class="col">
+            <label for="email" class="form-label fw-semibold">Email*</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="exemplo@exemplo.com.br"
+            />
+            <div class="invalid-feedback">Campo obrigatório</div>
+          </div>
+          <div class="col-12">
+            <label for="bio" class="form-label fw-semibold">Comentário*</label>
+
+            <textarea
+              required
+              class="form-control"
+              id="bio"
+              rows="8"
+            ></textarea>
+            <div class="invalid-feedback">Campo obrigatório</div>
+          </div>
+          <div class="col">
+            <button type="submit" id="toast-trigger" class="btn btn-success">
+              Postar comentário
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
     <footer class="bg-dark container-fluid">
       <div
         class="row row-cols-3 row-cols-sm-4 row-cols-lg-5 px-1 px-lg-5 py-4 d-flex align-items-center"
@@ -206,5 +393,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/post.js"></script>
   </body>
 </html>

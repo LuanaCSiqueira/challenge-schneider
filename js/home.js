@@ -71,7 +71,7 @@ function generateRandomNumber() {
   return Math.floor(Math.random() * 100);
 }
 
-// Modal Comment
+// MODAL COMMENT
 const commentLikeBtn = document.querySelectorAll('[data-id="comment-like"]');
 const commentReplyBtn = document.querySelectorAll('[data-id="comment-reply"]');
 const replySection = document.querySelectorAll('#reply-section');
@@ -97,7 +97,10 @@ function calculateVerticalLines() {
 window.addEventListener('resize', calculateVerticalLines);
 
 commentLikeBtn.forEach((btn, index) =>
-  btn.addEventListener('click', () => likeComment(index))
+  btn.addEventListener('click', () => {
+    likeComment(index);
+    calculateVerticalLines();
+  })
 );
 commentReplyBtn.forEach((btn, index) =>
   btn.addEventListener('click', () => {

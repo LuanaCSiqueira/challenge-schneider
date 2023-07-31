@@ -19,12 +19,12 @@ button:hover i[data-id='comment'] {
 }
 
 .comment-actions:is(:hover, :active:hover) {
-  color: var(--brand-primary);
+  color: #009e4d;
 }
 
 :is(button[data-id='comment-like'], button[data-id='comment-reply']).active {
   font-weight: bold;
-  color: var(--brand-primary);
+  color: #009e4d;
 }
 
 .comment-line-horizontal::before {
@@ -50,10 +50,10 @@ button:hover i[data-id='comment'] {
 }
 
 :is(#comment-input:is(:hover, :focus) i, #comment-input:focus-visible) {
-  color: var(--brand-primary);
-  outline-color: var(--brand-primary);
+  color: #009e4d;
+  outline-color: #009e4d;
 }
 
 .avatar {
-  box-shadow: 0px 0px 0px 2px var(--brand-primary);
+  box-shadow: 0px 0px 0px 2px #009e4d;
 }
