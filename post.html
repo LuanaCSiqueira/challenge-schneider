@@ -64,7 +64,7 @@
                   <a class="nav-link" href="./">Início</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./news.html">Notícias</a>
+                  <a class="nav-link" href="./learning.html">E-learning</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./about.html">Sobre o projeto</a>
@@ -106,17 +106,25 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
           repudiandae!
         </h1>
-        <div class="text-secondary mb-4">
-          <img
-            src="./assets/avatar.jpg"
-            alt="Profile avatar"
-            class="rounded-circle"
-            width="40"
-            height="40"
-          />
-          <span class="me-2">@johndoe</span>
-          <i class="bi bi-calendar"></i>
-          <span>30/07/2023</span>
+        <div class="text-secondary mb-4 d-flex gap-3 align-items-center">
+          <div>
+            <img
+              src="./assets/avatar.jpg"
+              alt="Profile avatar"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+            <span>@johndoe</span>
+          </div>
+          <div class="flex-fill">
+            <i class="bi bi-calendar me-1"></i>
+            <span>30/07/2023</span>
+          </div>
+          <button type="button" class="btn btn-sm p-0 text-secondary border-0">
+            <i data-id="like" class="bi bi-heart fs-5"></i>
+            <span class="d-none"></span>
+          </button>
         </div>
         <img
           class="img-fluid rounded mb-4"
@@ -149,6 +157,7 @@
           Aperiam molestias earum eaque, voluptatum illo veritatis provident
           ipsa commodi, enim eos magnam qui similique.
         </p>
+
         <!-- COMMENTS SECTION -->
         <h2 class="mt-5 mb-4">Comentários</h2>
         <div class="d-flex gap-2">
@@ -295,8 +304,11 @@
           <h6 class="text-white-50 mb-3">Links rápidos</h6>
           <ul class="list-unstyled mb-0 vstack gap-2">
             <li>
-              <a href="./news.html" class="text-decoration-none link-secondary">
-                Notícias
+              <a
+                href="./learning.html"
+                class="text-decoration-none link-secondary"
+              >
+                E-learning
               </a>
             </li>
             <li>
