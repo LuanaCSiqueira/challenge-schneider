@@ -1,12 +1,31 @@
-#bt{
-    background-color: #563d7c;
+#bt {
+  background-color: #563d7c;
 }
-#css{
-    background-color: #3582c4;
+#css {
+  background-color: #3582c4;
 }
-#html{
-    background-color: #f96b00;
+#html {
+  background-color: #f96b00;
 }
-#js{
-    background-color: #fdd663;
+#js {
+  background-color: #fdd663;
+}
+
+.img-fluid {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  #box-bruno {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 576px) {
+  .tecno {
+    border-radius: 4px;
+    overflow: hidden;
+  }
 }
