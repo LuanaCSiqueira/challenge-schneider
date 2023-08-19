@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../assets/sustentabilidade.jpg');
+  background: url('/assets/sustentabilidade.jpg');
   background-position: cover;
 }
 .h1 {
