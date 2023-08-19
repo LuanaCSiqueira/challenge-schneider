@@ -3,6 +3,7 @@
 }
 .hero{
     width: 100%;
+    margin-top: 90px;
     height: 20rem;
     display: flex;
     align-items: center;
@@ -80,13 +81,3 @@
     }
   }
 
-   
-  .section {
-    
-        /* Defina seus estilos aqui */
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 5%;
-      
-  }
