@@ -1,261 +1,344 @@
 <!DOCTYPE html>
-< lang="pt-br">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Challenge Schneider | Sobre o projeto</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./css/globals.css" />
-  <link rel="stylesheet" href="./css/about.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Challenge Schneider | Sobre o projeto</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
-      <div class="container-fluid px-lg-5">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-          aria-controls="navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand mx-auto" href="./"><img src="./assets/logo-header.svg" alt="Schneider Eletrics"
-            height="64" width="150" /></a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="navbarNav" id="navbarNav">
-          <div class="offcanvas-header">
-            <a class="navbar-brand mx-auto" href="./"><img src="./assets/logo-header.svg" alt="Schneider Eletrics"
-                height="64" width="150" /></a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+        <div class="container-fluid px-lg-5">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mx-auto" href="./"
+            ><img
+              src="./assets/logo-header.svg"
+              alt="Schneider Eletrics"
+              height="64"
+              width="150"
+          /></a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            aria-labelledby="navbarNav"
+            id="navbarNav"
+          >
+            <div class="offcanvas-header">
+              <a class="navbar-brand mx-auto" href="./"
+                ><img
+                  src="./assets/logo-header.svg"
+                  alt="Schneider Eletrics"
+                  height="64"
+                  width="150"
+              /></a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto fw-bold text-uppercase gap-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./learning.html">E-learning</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./about.html"
+                    >Sobre o projeto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pitch.html">Vídeo Pitch</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav mx-auto fw-bold text-uppercase gap-4">
-              <li class="nav-item">
-                <a class="nav-link" href="./">Início</a>
+          <div class="dropdown">
+            <button
+              id="profile-dropdown"
+              class="btn btn-outline-success dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a href="./profile.html" class="dropdown-item"
+                  ><i class="bi bi-person-fill me-2"></i>Perfil</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./news.html">Notícias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./about.html">Sobre o projeto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pitch.html">Vídeo Pitch</a>
+              <li>
+                <a href="./sign-in.html" class="dropdown-item"
+                  ><i class="bi bi-box-arrow-left me-2"></i>Logout</a
+                >
               </li>
             </ul>
           </div>
         </div>
-        <div class="dropdown">
-          <button id="profile-dropdown" class="btn btn-outline-success dropdown-toggle" type="button"
-            data-bs-toggle="dropdown" aria-expanded="false"></button>
-
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <a href="./profile.html" class="dropdown-item"><i class="bi bi-person-fill me-2"></i>Perfil</a>
-            </li>
-            <li>
-              <a href="./sign-in.html" class="dropdown-item"><i class="bi bi-box-arrow-left me-2"></i>Logout</a>
-            </li>
-          </ul>
+      </nav>
+    </header>
+    <main id="main-container">
+      <h1 class="pt-3 pb-5 text-center">Tecnologias Utilizadas</h1>
+      <div class="container">
+        <div class="tecno row row-cols-lg-4 row-cols-sm-2 row-cols-1">
+          <div id="bt" class="text-white pb-1 pt-2 px-3 col">
+            <h3><i class="fa-brands fa-bootstrap me-2"></i>Bootstrap</h3>
+            <p>
+              Um framework de código aberto amplamente utilizado para o
+              desenvolvimento de interfaces de usuário responsivas e estilizadas
+              na web.
+            </p>
+          </div>
+          <div id="css" class="text-white pb-1 pt-2 px-3 col">
+            <h3><i class="fa-brands fa-css3-alt me-2"></i>CSS</h3>
+            <p>
+              É uma linguagem de estilo utilizada na web para definir a
+              aparência e o layout de documentos HTML.
+            </p>
+          </div>
+          <div id="html" class="text-white pb-1 pt-2 px-3 col">
+            <h3><i class="fa-brands fa-html5 me-2"></i>HTML</h3>
+            <p>
+              É a linguagem fundamental para a criação e estruturação de
+              conteúdo na web.
+            </p>
+          </div>
+          <div id="js" class="pb-1 pt-2 px-3 col">
+            <h3><i class="fa-brands fa-js me-2"></i>JavaScript</h3>
+            <p>
+              É uma linguagem de programação amplamente utilizada na web para
+              adicionar interatividade e dinamismo às páginas da web.
+            </p>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-  <main id="main-container">
-    <div class="container mb-5">
-      <h1 class="pt-3 pb-5 text-center">
-        Tecnologias Utilizadas
-      </h1>
-      <div class="pb-3">
-        <div id="bt" class="container-fluid text-white w-50 mb-3 pb-1 pt-2">
-          <h3><i class="fa-brands fa-bootstrap"></i>Bootstrap</h3>
-          <p>
-            Um framework de código aberto amplamente utilizado para o desenvolvimento de interfaces de usuário responsivas e estilizadas na web.
-          </p>
-        </div>
-        <div id="css" class="container-fluid text-white w-50 mb-3 pb-1 pt-2">
-          <h3><i class="fa-brands fa-css3-alt"></i>CSS</h3>
-          <p>
-            É uma linguagem de estilo utilizada na web para definir a aparência e o layout de documentos HTML.
-          </p>
-        </div>
-        <div id="html" class="container-fluid text-white w-50 mb-3 pb-1 pt-2">
-          <h3><i class="fa-brands fa-html5"></i>HTML</h3>
-          <p>
-            É a linguagem fundamental para a criação e estruturação de conteúdo na web.
-          </p>
-        </div>
-        <div id="js" class="container-fluid w-50 pb-1 pt-2">
-          <h3><i class="fa-brands fa-js"></i>JavaScript</h3>
-          <p>
-            É uma linguagem de programação amplamente utilizada na web para adicionar interatividade e dinamismo às páginas da web.
-          </p>
-        </div>
-      </div>
-      <div class="container-fluid w-75 mb-5">
-        <h1 class="pt-5 pb-2 mb-5 text-center">
-          Nossa Equipe
-        </h1>
+      <h1 class="pt-5 pb-2 mb-5 text-center">Nossa Equipe</h1>
+      <div id="box-arthur" class="container mb-5">
         <div class="card">
           <div class="row">
             <div class="col-md-4">
-              <img src="/assets/Arthur.jpeg" alt="Imagem" class="img-fluid w-100">
+              <img
+                src="/assets/Arthur.jpeg"
+                alt="Imagem"
+                class="img-fluid w-100"
+              />
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h4 class="card-title">Arthur Nascimento Santos</h4>
-                <p class="card-text">Aluno do 1º ano do curso de Engenharia de Software da FIAP - RM 551592</p>
-                <div class="card-header">
-                  Responsavel por:
-                </div>
+                <p class="card-text">
+                  Aluno do 1º ano do curso de Engenharia de Software da FIAP -
+                  RM 551592
+                </p>
+                <div class="card-header">Responsável por:</div>
                 <ul class="list-group list-group-flush border">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Página de Login</li>
+                  <li class="list-group-item">Página Sobre o Projeto</li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>    
+        </div>
       </div>
-      <div class="container-fluid w-75 mb-5">
+      <div class="container mb-5">
         <div class="card">
-          <div class="row">
+          <div id="box-bruno" class="row">
             <div class="col-md-8">
               <div class="card-body">
                 <h4 class="card-title">Bruno Fukumori</h4>
-                <p class="card-text">Aluno do 1º ano do curso de Engenharia de Software da FIAP - RM 99486</p>
-                <div class="card-header">
-                  Responsavel por:
-                </div>
+                <p class="card-text">
+                  Aluno do 1º ano do curso de Engenharia de Software da FIAP -
+                  RM 99486
+                </p>
+                <div class="card-header">Responsável por:</div>
                 <ul class="list-group list-group-flush border">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">
+                    Páginas de Início (feed), Perfil, Detalhes do post e Vídeo
+                    Pitch.
+                  </li>
+                  <li class="list-group-item">
+                    Criação das funções Javascript para pequenas interações no
+                    site (curtir, comentar, número de visualizações, toast e
+                    modais).
+                  </li>
+                  <li class="list-group-item">
+                    Criação da parte de gamificação (desafio da semana e aba de
+                    conquistas no perfil)
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-md-4">
-              <img src="/assets/avatar.jpg" alt="Imagem" class="img-fluid w-100">
+              <img
+                src="/assets/bruno.jpg"
+                alt="Imagem"
+                class="img-fluid w-100"
+              />
             </div>
           </div>
-        </div>    
+        </div>
       </div>
-      <div class="container-fluid w-75 pb-5">
+      <div id="box-luana" class="container pb-5">
         <div class="card">
           <div class="row">
             <div class="col-md-4">
-              <img src="/assets/Luana.jpeg" alt="Imagem" class="img-fluid w-100">
+              <img
+                src="/assets/Luana.jpeg"
+                alt="Imagem"
+                class="img-fluid w-100"
+              />
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h4 class="card-title">Luana Siqueira</h4>
-                <p class="card-text">Aluna do 1º ano do curso de Engenharia de Software da FIAP - RM 97822</p>
-                <div class="card-header">
-                  Responsavel por:
-                </div>
+                <p class="card-text">
+                  Aluna do 1º ano do curso de Engenharia de Software da FIAP -
+                  RM 97822
+                </p>
+                <div class="card-header">Responsável por:</div>
                 <ul class="list-group list-group-flush border">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Página E-Learning</li>
+                  <li class="list-group-item">Vídeo Pitch</li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>    
+        </div>
       </div>
-    </div>
-  </main>
-  <footer class="bg-dark">
-    <div class="container-fluid row pt-5 pb-4 px-3 px-md-5">
-      <div class="col">
-        <h6 class="text-white-50 mb-3">Links rápidos</h6>
-        <ul class="list-unstyled mb-0 vstack gap-2">
-          <li>
-            <a href="./news.html" class="text-decoration-none link-secondary">
-              Notícias
-            </a>
-          </li>
-          <li>
-            <a href="./pitch.html" class="text-decoration-none link-secondary">
-              Vídeo Pitch
-            </a>
-          </li>
-          <li>
-            <a href="https://www.se.com/br/pt/" target="_blank" rel="noopener noreferrer"
-              class="text-decoration-none link-secondary">
-              Site Schneider
-            </a>
-          </li>
-        </ul>
+    </main>
+    <footer class="bg-dark">
+      <div class="container-fluid row pt-5 pb-4 px-3 px-md-5">
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Links rápidos</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a
+                href="./learning.html"
+                class="text-decoration-none link-secondary"
+              >
+                E-learning
+              </a>
+            </li>
+            <li>
+              <a
+                href="./pitch.html"
+                class="text-decoration-none link-secondary"
+              >
+                Vídeo Pitch
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.se.com/br/pt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-decoration-none link-secondary"
+              >
+                Site Schneider
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Lorem</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Lorem</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6 class="text-white-50 mb-3">Lorem</h6>
+          <ul class="list-unstyled mb-0 vstack gap-2">
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none link-secondary">
+                Lorem
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/logo-footer.svg" alt="Schneider Life is On" />
       </div>
-      <div class="col">
-        <h6 class="text-white-50 mb-3">Lorem</h6>
-        <ul class="list-unstyled mb-0 vstack gap-2">
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h6 class="text-white-50 mb-3">Lorem</h6>
-        <ul class="list-unstyled mb-0 vstack gap-2">
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h6 class="text-white-50 mb-3">Lorem</h6>
-        <ul class="list-unstyled mb-0 vstack gap-2">
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none link-secondary">
-              Lorem
-            </a>
-          </li>
-        </ul>
-      </div>
-      <img src="./assets/logo-footer.svg" alt="Schneider Life is On" />
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
