@@ -43,9 +43,9 @@ body {
 #profile-dropdown {
   border: none;
   border-radius: 8px;
-  width: 50px;
-  height: 50px;
-  background: url('../assets/avatar.jpg');
+  width: 40px;
+  height: 40px;
+  background: url('../assets/avatar.jpg') no-repeat center center;
 }
 
 #profile-dropdown::after {
