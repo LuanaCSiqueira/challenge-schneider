@@ -1,0 +1,14 @@
+.cardevent {
+  height: 100%;
+}
+
+.custom-card {
+  height: 100%;
+}
+
+.custom-text {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+}
