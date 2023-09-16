@@ -1,0 +1,41 @@
+.hero {
+    width: 100%;
+    margin-top: 90px;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/diversidade-banner.jpg');
+    background-position: cover;
+}
+.h1 {
+    font-weight: bold;
+    color: white;
+    padding: 2vh;
+    border-radius: 5px;
+  }
+.container-fluid {
+    text-align: center;
+}
+#main-container { 
+    text-align: center;
+    margin-top: 5px;
+}
+.card-body {
+    color: rgb(0, 1, 41);
+    text-align: center;
+    display: inline-block;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+.card {
+    display: inline-block;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.card-text {
+    font: size 25px;;
+}
