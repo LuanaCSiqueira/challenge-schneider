@@ -14,7 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/globals.css" />
-    <link rel="stylesheet" href="./css/events.css">
+    <link rel="stylesheet" href="./css/events.css" />
     <title>Challenge Schneider | Eventos</title>
   </head>
   <body>
@@ -108,45 +108,18 @@
         </div>
       </nav>
     </header>
-    <div id="main-container">
+    <main id="main-container">
       <div class="row">
         <div class="col-7 w-50">
-          <div 
-          id="carouselinnovation" 
-          class="carousel slide ms-5" 
-          data-bs-ride="carousel"
-          data-interval="5000">
-            <div class="carousel-inner">
-              <button
-                type="button"
-                data-bs-target="carouselinnovation"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="carouselinnovation"
-                data-bs-slide-to="1"
-                aria-label="slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="carouselinnovation"
-                data-bs-slide-to="2"
-                aria-label="slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="carouselinnovation"
-                data-bs-slide-to="3"
-                aria-label="slide 4"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card custom-card">
+          <div
+            id="carouselinnovation"
+            class="carousel slide ms-5 card-event"
+            data-bs-ride="carousel"
+            data-interval="5000"
+          >
+            <div class="carousel-inner card-event">
+              <div class="carousel-item card-event active">
+                <div class="card card-event">
                   <img
                     src="./assets/innovationHub.jpg"
                     class="card-img-top"
@@ -155,286 +128,446 @@
                   <div class="card-body bg-dark text-white">
                     <h2 class="card-title">Innovation Hub</h2>
                     <p class="card-text fs-5">
-                      Visite os salões de exposição no mundo todo para descobrir nossas
-                      inovações mais recentes.
+                      Visite os salões de exposição no mundo todo para descobrir
+                      nossas inovações mais recentes.
                     </p>
                   </div>
                 </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card custom-card">
-                    <img 
-                      src="./assets/innovationday.jpg"
-                      class="card-img-top" 
-                      alt="innovationday">
-                    <div class="card-body bg-dark text-white">
-                      <h2 class="card-title">Innovation Day</h2>
-                      <p class="card-text fs-5">Um evento de inovação de um dia repleto de conferências, palestras sobre estratégia e sessões de aprendizado especializadas.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card custom-card">
-                    <img src="./assets/innovationtalk.jpg" class="card-img-top" alt="innovationtalk">
-                    <div class="card-body bg-dark text-white">
-                      <h2 class="card-title">Innovation Talk</h2>
-                      <p class="card-text fs-5">
-                        Participe de sessões exclusivas de inovação e webinars com nossos especialistas.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card custom-card">
-                    <img src="./assets/feiradenegocios.jpg" class="card-img-top" alt="feiradenegocios">
-                    <div class="card-body bg-dark text-white">
-                      <h2 class="card-title">Feira de Negócios</h2>
-                      <p class="card-text fs-5">
-                        Conheça nossos especialistas nas feiras de negócios no mundo todo e descubra nossas soluções.
-                      </p>
-                    </div>
+              </div>
+              <div class="carousel-item card-event">
+                <div class="card card-event">
+                  <img
+                    src="./assets/innovationday.jpg"
+                    class="card-img-top"
+                    alt="innovationday"
+                  />
+                  <div class="card-body bg-dark text-white">
+                    <h2 class="card-title">Innovation Day</h2>
+                    <p class="card-text fs-5">
+                      Um evento de inovação de um dia repleto de conferências,
+                      palestras sobre estratégia e sessões de aprendizado
+                      especializadas.
+                    </p>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselinnovation" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselinnovation" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item card-event">
+                <div class="card card-event">
+                  <img
+                    src="./assets/innovationtalk.jpg"
+                    class="card-img-top"
+                    alt="innovationtalk"
+                  />
+                  <div class="card-body bg-dark text-white">
+                    <h2 class="card-title">Innovation Talk</h2>
+                    <p class="card-text fs-5">
+                      Participe de sessões exclusivas de inovação e webinars com
+                      nossos especialistas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item card-event">
+                <div class="card card-event">
+                  <img
+                    src="./assets/feiradenegocios.jpg"
+                    class="card-img-top"
+                    alt="feiradenegocios"
+                  />
+                  <div class="card-body bg-dark text-white">
+                    <h2 class="card-title">Feira de Negócios</h2>
+                    <p class="card-text fs-5">
+                      Conheça nossos especialistas nas feiras de negócios no
+                      mundo todo e descubra nossas soluções.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselinnovation"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselinnovation"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         <div class="col-5">
           <h1 class="text-center pb-2">Alavanque a sua Carreira</h1>
           <p class="fs-5 px-5">
             Com o Innovation Summits, o Innovation Days, e o Innovation Talks,
-            nossos eventos tratam de preparar você para se manter competitivo, com
-            tecnologias líderes mundiais de gestão de energia e automação para
-            residências, edifícios, data centers, infraestruturas e indústrias.
-            Você encontrará palestras informativas, cursos de certificação
-            profissional e muito mais — disponíveis presencialmente, online e em
-            formatos híbridos.
+            nossos eventos tratam de preparar você para se manter competitivo,
+            com tecnologias líderes mundiais de gestão de energia e automação
+            para residências, edifícios, data centers, infraestruturas e
+            indústrias. Você encontrará palestras informativas, cursos de
+            certificação profissional e muito mais — disponíveis
+            presencialmente, online e em formatos híbridos.
           </p>
         </div>
       </div>
-        <h1 class="text-center mt-5">Nossos Eventos</h1>
-          <div id="carouselevents" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselevents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselevents" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselevents" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active px-5">
-                <div class="row py-5 row-cols-4">
-                  <div class="col">
-                    <div class="card cardevent">
-                      <img 
-                      src="./assets/InnovationTalk-Sistemas-de-Controle-de-Bateladas.jpg"
-                      class="card-img-top" 
-                      alt="Sistemas de Controle de Bateladas">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Innovation Talk: Sistemas de Controle de Bateladas</h5>
-                        <p class="card-text custom-text">
-                          Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                        </p>
-                          <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card cardevent">
-                      <img 
-                      src="./assets/Innovation-talk-Gerenciamento-de-Receita-com-Recipe-Manager-software.jpg"
-                      class="card-img-top" 
-                      alt="Innovation talk: Gerenciamento de Receita com Recipe Manager software">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Innovation talk: Gerenciamento de Receita com Recipe Manager</h5>
-                        <p class="card-text custom-text">
-                          Aprenda como usar o software Recipe Manager de gerenciamento de receita colaborativo para capacitar as equipes operacionais na adoção, otimização e execução de receita em equipamentos automatizados de produção e embalagem.
-                        </p>
-                        <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card cardevent">
-                      <img 
-                      src="./assets/Innovation-Talk-Prevenção-de-incêndios-elétricos.JPG"
-                      class="card-img-top" 
-                      alt="Innovation Talk: Prevenção de incêndios elétricos">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Innovation Talk: Prevenção de incêndios elétricos</h5>
-                        <p class="card-text custom-text">
-                          Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                        </p>
-                        <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card cardevent">
-                      <img 
-                      src="./assets/Innovation-tallk-Soluções-para-o-setor-de-mineração.JPG"
-                      class="card-img-top" 
-                      alt="Innovation tallk: Soluções para o setor de mineração">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Innovation tallk: Soluções para o setor de mineração</h5>
-                        <p class="card-text custom-text">
-                          Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                        </p>
-                        <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                      </div>
-                    </div>
+      <h1 class="text-center mt-5">Nossos Eventos</h1>
+      <div id="carouselevents" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselevents"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselevents"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselevents"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner card-event">
+          <div class="carousel-item card-event active px-5">
+            <div class="row py-5 row-cols-4">
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/InnovationTalk-Sistemas-de-Controle-de-Bateladas.jpg"
+                    class="card-img-top"
+                    alt="Sistemas de Controle de Bateladas"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation Talk: Sistemas de Controle de Bateladas
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
                   </div>
                 </div>
               </div>
-              <div class="carousel-item px-5">
-                <div class="row py-5 row-cols-4">
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
-                    src="./assets/Innovation-Talk-Proteção-Elétrica-a-importância-de-utilizar-o-Disjuntor-DR-e-DPS-nas instalações elétricas.JPG"
-                    class="card-img-top" 
-                    alt="Innovation Talk: Proteção Elétrica - a importância de utilizar o Disjuntor, DR e DPS nas instalações elétricas">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title" style="
-                      overflow: hidden;
-                      -webkit-box-orient: vertical;
-                      -webkit-line-clamp: 2;
-                      display: -webkit-box;
-                  ">Innovation Talk: Proteção Elétrica - a importância de utilizar o Disjuntor, DR e DPS nas instalações elétricas</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
-                    src="./assets/Innovation-talk-Solução-Hoisting.JPG"
-                    class="card-img-top" 
-                    alt="Innovation talk: Solução Hoisting">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation talk: Solução Hoisting</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card cardevent">
-                    <img
-                    src="./assets/Innovation-Talk-EcoStruxure-for-Data-Center.JPG"
-                    class="card-img-top" 
-                    alt="Innovation Talk: EcoStruxure for Data Center">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation Talk: EcoStruxure for Data Center</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
+              <div class="col">
+                <div class="card card-event">
+                  <img
                     src="./assets/Innovation-talk-Gerenciamento-de-Receita-com-Recipe-Manager-software.jpg"
-                    class="card-img-top" 
-                    alt="Innovation talk: Jornada de Packaging">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation talk: Jornada de Packaging</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
+                    class="card-img-top"
+                    alt="Innovation talk: Gerenciamento de Receita com Recipe Manager software"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation talk: Gerenciamento de Receita com Recipe
+                      Manager
+                    </h5>
+                    <p class="card-text custom-text">
+                      Aprenda como usar o software Recipe Manager de
+                      gerenciamento de receita colaborativo para capacitar as
+                      equipes operacionais na adoção, otimização e execução de
+                      receita em equipamentos automatizados de produção e
+                      embalagem.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="carousel-item px-5">
-                <div class="row py-5 row-cols-4">
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
-                    src="./assets/Innovation-talk-Indústria-4.0.jpg"
-                    class="card-img-top" 
-                    alt="Innovation talk: Indústria 4.0">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation talk: Indústria 4.0</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
-                    src="./assets/Innovation-Talk-Relés-de-proteção-Easergy-P3-e-P5.JPG"
-                    class="card-img-top" 
-                    alt="Innovation Talk: Relés de proteção Easergy P3 e P5">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation Talk: Relés de proteção Easergy P3 e P5</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
-                    src="./assets/Innovation-Talk-Proteção-Elétrica-a-importância-de-utilizar-o-Disjuntor-DR-e-DPS-nas instalações elétricas.JPG"
-                    class="card-img-top" 
-                    alt="Innovation Talk: Evolução do varejo">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation Talk: Evolução do varejo</h5>
-                      <p class="card-text custom-text">
-                        Registre-se e assista ao webinar "Innovation Talk", fique por dentro das novidades e tendências do mercado.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card cardevent">
-                    <img 
-                    src="./assets/Innovation-Summit-South-America-2021.jpg"
-                    class="card-img-top" 
-                    alt="Innovation Summit South America 2021">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Innovation Summit South America 2021</h5>
-                      <p class="card-text custom-text">
-                        Junte-se a nós no caminho para a sustentabilidade. Prepare hoje seu negócio para o futuro melhorando a resiliência e aproveitando a digitalização.
-                      </p>
-                      <a href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por" class=" btn btn-success">Inscrever-se</a>
-                    </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-Talk-Prevenção-de-incêndios-elétricos.JPG"
+                    class="card-img-top"
+                    alt="Innovation Talk: Prevenção de incêndios elétricos"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation Talk: Prevenção de incêndios elétricos
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
                   </div>
                 </div>
               </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-tallk-Soluções-para-o-setor-de-mineração.JPG"
+                    class="card-img-top"
+                    alt="Innovation tallk: Soluções para o setor de mineração"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation tallk: Soluções para o setor de mineração
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselevents" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselevents" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <div class="carousel-item card-event px-5">
+            <div class="row py-5 row-cols-4">
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-Talk-Proteção-Elétrica-a-importância-de-utilizar-o-Disjuntor-DR-e-DPS-nas instalações elétricas.JPG"
+                    class="card-img-top"
+                    alt="Innovation Talk: Proteção Elétrica - a importância de utilizar o Disjuntor, DR e DPS nas instalações elétricas"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5
+                      class="card-title"
+                      style="
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                      "
+                    >
+                      Innovation Talk: Proteção Elétrica - a importância de
+                      utilizar o Disjuntor, DR e DPS nas instalações elétricas
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-talk-Solução-Hoisting.JPG"
+                    class="card-img-top"
+                    alt="Innovation talk: Solução Hoisting"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation talk: Solução Hoisting
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-Talk-EcoStruxure-for-Data-Center.JPG"
+                    class="card-img-top"
+                    alt="Innovation Talk: EcoStruxure for Data Center"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation Talk: EcoStruxure for Data Center
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-talk-Gerenciamento-de-Receita-com-Recipe-Manager-software.jpg"
+                    class="card-img-top"
+                    alt="Innovation talk: Jornada de Packaging"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation talk: Jornada de Packaging
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item card-event px-5">
+            <div class="row py-5 row-cols-4">
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-talk-Indústria-4.0.jpg"
+                    class="card-img-top"
+                    alt="Innovation talk: Indústria 4.0"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">Innovation talk: Indústria 4.0</h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-Talk-Relés-de-proteção-Easergy-P3-e-P5.JPG"
+                    class="card-img-top"
+                    alt="Innovation Talk: Relés de proteção Easergy P3 e P5"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation Talk: Relés de proteção Easergy P3 e P5
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-Talk-Proteção-Elétrica-a-importância-de-utilizar-o-Disjuntor-DR-e-DPS-nas instalações elétricas.JPG"
+                    class="card-img-top"
+                    alt="Innovation Talk: Evolução do varejo"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation Talk: Evolução do varejo
+                    </h5>
+                    <p class="card-text custom-text">
+                      Registre-se e assista ao webinar "Innovation Talk", fique
+                      por dentro das novidades e tendências do mercado.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-event">
+                  <img
+                    src="./assets/Innovation-Summit-South-America-2021.jpg"
+                    class="card-img-top"
+                    alt="Innovation Summit South America 2021"
+                  />
+                  <div class="card-body d-flex flex-column gap-2">
+                    <h5 class="card-title">
+                      Innovation Summit South America 2021
+                    </h5>
+                    <p class="card-text custom-text">
+                      Junte-se a nós no caminho para a sustentabilidade. Prepare
+                      hoje seu negócio para o futuro melhorando a resiliência e
+                      aproveitando a digitalização.
+                    </p>
+                    <a
+                      href="https://events.se.com/ereg/newreg.php?eventid=200214511&language=por"
+                      class="btn btn-success"
+                      >Inscrever-se</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselevents"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselevents"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
     <footer class="bg-dark container-fluid">
       <div
